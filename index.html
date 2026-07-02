@@ -345,6 +345,97 @@
     .guarantee{ flex-direction:column; text-align:center; }
     .urgency{ flex-direction:column; text-align:center; }
   }
+
+  /* ===== BLOCO HISTÓRIA REAL BERNARDO ===== */
+  .pet-story{
+    margin-top:42px;
+    display:grid;
+    grid-template-columns:0.95fr 1.05fr;
+    gap:28px;
+    align-items:stretch;
+  }
+  .pet-photo-card{
+    position:relative;
+    border-radius:28px;
+    overflow:hidden;
+    min-height:390px;
+    box-shadow:0 26px 60px -24px rgba(74,59,64,0.45);
+    border:1px solid var(--line);
+    background:var(--card);
+  }
+  .pet-photo-card img{
+    width:100%;
+    height:100%;
+    min-height:390px;
+    object-fit:cover;
+    object-position:center;
+    display:block;
+  }
+  .real-badge{
+    position:absolute;
+    top:18px;
+    left:18px;
+    background:rgba(255,253,250,0.92);
+    color:var(--rose-deep);
+    border:1px solid var(--line);
+    border-radius:100px;
+    padding:9px 15px;
+    font-weight:700;
+    font-size:0.88rem;
+    box-shadow:0 12px 28px -18px rgba(74,59,64,0.45);
+  }
+  .pet-story-text{
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:28px;
+    padding:38px 36px;
+    box-shadow:var(--shadow);
+    text-align:left;
+  }
+  .pet-story-text h3{
+    font-size:clamp(1.55rem,3vw,2.15rem);
+    color:var(--lilac-deep);
+    margin-bottom:16px;
+    line-height:1.18;
+  }
+  .pet-story-text p{
+    color:var(--ink-soft);
+    margin-bottom:14px;
+    font-size:1rem;
+  }
+  .pet-story-text .highlight{
+    color:var(--rose-deep);
+    font-weight:700;
+    font-family:'Fraunces',serif;
+    font-size:1.08rem;
+    margin-top:18px;
+  }
+  .audio-card-premium{
+    margin-top:30px;
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:28px;
+    padding:34px 30px;
+    box-shadow:0 26px 60px -26px rgba(74,59,64,0.42);
+  }
+  .audio-card-premium .music-icon{
+    font-size:2rem;
+    margin-bottom:6px;
+  }
+  .audio-card-premium audio{
+    width:100%;
+    max-width:680px;
+    margin-top:18px;
+  }
+  .story-cta{
+    margin-top:28px;
+  }
+  @media (max-width:880px){
+    .pet-story{ grid-template-columns:1fr; }
+    .pet-photo-card, .pet-photo-card img{ min-height:320px; }
+    .pet-story-text{ padding:30px 24px; text-align:left; }
+  }
+
 </style>
 </head>
 <body>
@@ -406,14 +497,36 @@
     <h2 class="headline">A história do Bernardo virou música</h2>
     <p class="lead mx">Aperte o play e sinta como uma lembrança especial pode se transformar em uma canção única para o seu pet.</p>
 
-    <div class="offer-card" style="margin-top:34px; text-align:center;">
-      <h3>🐾 Trecho da música do Bernardo</h3>
-      <p class="sub">Um dos mascotes do Voz do Meu Pet.</p>
-      <audio controls preload="metadata" style="width:100%; max-width:560px; margin-top:18px;">
-        <source src="áudio/bernardo.mp3" type="audio/mpeg">
+    <div class="pet-story">
+      <div class="pet-photo-card">
+        <img src="imagens/bernardo.jpg" alt="Bernardo, cachorro mascote do Voz do Meu Pet">
+        <span class="real-badge">🐾 História real</span>
+      </div>
+
+      <div class="pet-story-text">
+        <h3>A história que inspirou essa música</h3>
+        <p>Bernardo é daqueles amigos que não precisam dizer uma palavra para demonstrar amor.</p>
+        <p>Com seu olhar carinhoso, seu jeitinho companheiro e sua presença em todos os momentos, ele conquistou um lugar eterno no coração da família.</p>
+        <p>Essa música nasceu para transformar carinho, saudade, brincadeiras e lembranças em uma homenagem que pode ser ouvida para sempre.</p>
+        <p class="highlight">Porque cada pet tem uma história que merece virar canção.</p>
+      </div>
+    </div>
+
+    <div class="audio-card-premium">
+      <div class="music-icon">🎵</div>
+      <h3>Trecho da música do Bernardo</h3>
+      <p class="sub">Um exemplo real criado para o Voz do Meu Pet.</p>
+      <audio controls preload="metadata">
+        <source src="audio/bernardo.mp3" type="audio/mpeg">
         Seu navegador não suporta áudio.
       </audio>
       <p class="offer-note">Cada música é criada exclusivamente a partir da história de um pet especial.</p>
+
+      <div class="story-cta">
+        <a href="https://wa.me/5544999809999?text=Ol%C3%A1%21%20Quero%20criar%20uma%20m%C3%BAsica%20personalizada%20para%20o%20meu%20pet.%0A%0ANome%20do%20pet%3A%0ACachorro%20ou%20gato%3A%0AConte%20um%20pouco%20da%20hist%C3%B3ria%20dele%3A" class="btn-whats big" target="_blank" rel="noopener">
+          Quero a música do meu pet
+        </a>
+      </div>
     </div>
   </div>
 </section>
