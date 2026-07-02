@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Transforme a história do seu pet em música | Voz do Meu Pet</title>
+<title>Transforme a história do seu pet em música | Som do Meu Pet</title>
 <meta name="description" content="Música personalizada para o seu pet. Conte a história, eu transformo em canção. Peça pelo WhatsApp.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500;1,9..144,600&family=Work+Sans:wght@400;500;600;700&family=Caveat:wght@500;600;700&display=swap" rel="stylesheet">
@@ -678,16 +678,364 @@
     }
   }
 
+
+  /* ===== AJUSTE FINAL 11/10 - EMOÇÃO E CONVERSÃO ===== */
+  .pet-photo-card::after{
+    background:linear-gradient(180deg, transparent 42%, rgba(0,0,0,.18) 64%, rgba(0,0,0,.58) 100%) !important;
+  }
+  .real-badge{
+    background:rgba(255,255,255,.96) !important;
+    color:#7f4388 !important;
+    letter-spacing:.01em;
+  }
+  .photo-caption{
+    font-size:1.45rem !important;
+    line-height:1.35 !important;
+    max-width:88%;
+  }
+  .photo-mini-line{
+    position:absolute;
+    left:22px;
+    bottom:94px;
+    z-index:2;
+    color:rgba(255,255,255,.92);
+    font-size:.94rem;
+    font-weight:700;
+    text-shadow:0 2px 14px rgba(0,0,0,.45);
+  }
+  .audio-card-premium{
+    padding:42px 40px 38px !important;
+  }
+  .play-prep{
+    margin:12px auto 18px;
+    max-width:680px;
+    padding:18px 22px;
+    border-radius:24px;
+    background:linear-gradient(135deg, rgba(203,151,219,.18), rgba(255,255,255,.72));
+    border:1px solid rgba(74,59,64,.08);
+    color:#4A3B40;
+    font-weight:800;
+    font-size:1.08rem;
+    line-height:1.55;
+  }
+  .audio-card-premium audio{
+    max-width:780px !important;
+    transform:scale(1.04);
+    margin:26px auto 18px !important;
+    display:block;
+  }
+  .after-audio-message{
+    margin:24px auto 8px;
+    max-width:720px;
+    font-family:'Fraunces',serif;
+    font-weight:800;
+    color:#7f4388;
+    font-size:1.18rem;
+    line-height:1.5;
+  }
+  .btn-whats.big{
+    padding:18px 32px !important;
+    font-size:1.08rem !important;
+  }
+  .proof-strip{
+    margin:32px auto 0;
+    max-width:960px;
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:16px;
+  }
+  .proof-mini-card{
+    background:rgba(255,255,255,.70);
+    border:1px solid rgba(74,59,64,.08);
+    border-radius:22px;
+    padding:18px 16px;
+    box-shadow:0 18px 42px -34px rgba(74,59,64,.55);
+  }
+  .proof-mini-card strong{
+    display:block;
+    color:#4A3B40;
+    font-family:'Fraunces',serif;
+    font-size:1.04rem;
+    margin-bottom:6px;
+  }
+  .proof-mini-card span{
+    color:#6b5d61;
+    font-size:.92rem;
+  }
+  @media(max-width:780px){
+    .proof-strip{ grid-template-columns:1fr; }
+    .audio-card-premium audio{ transform:none; }
+    .photo-mini-line{ bottom:104px; }
+  }
+
+
+  /* ===== SOM DO MEU PET - VISUAL FINAL ALEGRE SEM LILÁS ===== */
+  :root{
+    --cream:#FFF8EF;
+    --cream-deep:#FBEAD7;
+    --card:#FFFDF8;
+    --coral:#F0644F;
+    --coral-deep:#D94835;
+    --peach:#FFD3B8;
+    --orange:#F59A23;
+    --gold:#D7A441;
+    --brown:#3A1F12;
+    --brown-soft:#6B4A36;
+    --green:#20A947;
+    --line:rgba(58,31,18,.12);
+    --shadow:0 28px 70px -35px rgba(58,31,18,.55);
+  }
+  body{
+    background:
+      radial-gradient(circle at 14% 10%, rgba(255,211,184,.42), transparent 32%),
+      radial-gradient(circle at 88% 30%, rgba(240,100,79,.13), transparent 30%),
+      linear-gradient(180deg, #FFF8EF 0%, #FFF2E6 60%, #FFE7D7 100%) !important;
+    color:var(--brown) !important;
+  }
+  .site-header, header, nav{
+    background:rgba(255,248,239,.88) !important;
+    backdrop-filter: blur(14px);
+  }
+  .brand, .logo, .brand-name{
+    color:var(--brown) !important;
+  }
+  .brand-logo-img{
+    width:118px;
+    height:auto;
+    display:block;
+    object-fit:contain;
+  }
+  .hero-logo-fix{
+    display:flex;
+    align-items:center;
+    gap:12px;
+  }
+  .btn-whats, .btn-whats.big, a[href*="wa.me"]{
+    background:linear-gradient(135deg,#20A947,#0B8F34) !important;
+    color:white !important;
+    box-shadow:0 18px 45px -24px rgba(11,143,52,.9) !important;
+  }
+  .eyebrow, .story-kicker{
+    color:var(--coral-deep) !important;
+  }
+  .headline, h1, h2, h3{
+    color:var(--brown) !important;
+  }
+  .headline em, .headline .accent-name, .accent, .highlight{
+    color:var(--coral) !important;
+  }
+  .headline .accent-name::after{
+    background:rgba(245,154,35,.25) !important;
+  }
+  #exemplo-audio{
+    background:
+      radial-gradient(circle at 20% 12%, rgba(255,211,184,0.55), transparent 34%),
+      radial-gradient(circle at 86% 66%, rgba(240,100,79,0.16), transparent 30%),
+      linear-gradient(180deg, #FFF8EF 0%, #FFEBDC 100%) !important;
+  }
+  .pet-story-text h3{
+    color:var(--brown) !important;
+  }
+  .pet-story-text .highlight{
+    color:var(--coral-deep) !important;
+  }
+  .real-badge{
+    background:linear-gradient(135deg,#FFE6B0,#F5A623) !important;
+    color:var(--brown) !important;
+  }
+  .music-icon{
+    background:linear-gradient(135deg,var(--coral),var(--orange)) !important;
+  }
+  .audio-card-premium::before{
+    background:linear-gradient(90deg,var(--coral),var(--orange),var(--green)) !important;
+  }
+  .listen-note, .after-audio-message{
+    color:var(--coral-deep) !important;
+  }
+  .price-final-card{
+    margin:30px auto 0;
+    max-width:960px;
+    display:grid;
+    grid-template-columns:.9fr 1.2fr .9fr;
+    gap:0;
+    background:rgba(255,253,248,.94);
+    border:1px solid var(--line);
+    border-radius:32px;
+    box-shadow:var(--shadow);
+    overflow:hidden;
+  }
+  .price-box, .included-box, .memory-box{
+    padding:34px 30px;
+  }
+  .price-box{
+    border-right:1px solid var(--line);
+  }
+  .included-box{
+    border-right:1px solid var(--line);
+  }
+  .price-title{
+    font-family:'Fraunces',serif;
+    font-size:1.5rem;
+    font-weight:800;
+    color:var(--brown);
+    line-height:1.2;
+  }
+  .price-value{
+    margin-top:18px;
+    font-family:'Fraunces',serif;
+    font-size:3.4rem;
+    font-weight:900;
+    color:var(--coral);
+    line-height:1;
+  }
+  .price-value small{
+    font-size:1.4rem;
+  }
+  .installment{
+    margin-top:12px;
+    display:inline-block;
+    padding:8px 14px;
+    border-radius:999px;
+    background:#FFE9B9;
+    color:var(--brown);
+    font-weight:800;
+    font-size:.92rem;
+  }
+  .included-box h3{
+    font-size:1.4rem;
+    margin-bottom:12px;
+  }
+  .included-box ul{
+    list-style:none;
+    padding:0;
+    margin:0;
+    display:grid;
+    gap:9px;
+  }
+  .included-box li{
+    color:var(--brown-soft);
+    font-weight:650;
+  }
+  .included-box li::before{
+    content:"♡";
+    color:var(--coral);
+    font-weight:900;
+    margin-right:8px;
+  }
+  .memory-box{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    font-family:'Fraunces',serif;
+    color:var(--brown);
+    font-size:1.45rem;
+    font-weight:800;
+    line-height:1.25;
+    background:radial-gradient(circle at center, rgba(255,211,184,.55), transparent 70%);
+  }
+  .memory-box em{
+    color:var(--coral);
+    font-style:italic;
+  }
+  .pets-proof-section{
+    margin:34px auto 0;
+    max-width:960px;
+    background:rgba(255,253,248,.84);
+    border:1px solid var(--line);
+    border-radius:32px;
+    padding:30px;
+    box-shadow:var(--shadow);
+  }
+  .pets-proof-title{
+    text-align:center;
+    font-family:'Fraunces',serif;
+    font-size:1.7rem;
+    color:var(--brown);
+    margin-bottom:20px;
+  }
+  .pets-proof-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:18px;
+  }
+  .pet-mini{
+    text-align:center;
+    background:white;
+    border:1px solid var(--line);
+    border-radius:24px;
+    padding:16px 12px;
+  }
+  .pet-mini .fake-photo{
+    width:88px;
+    height:88px;
+    margin:0 auto 10px;
+    border-radius:24px;
+    display:grid;
+    place-items:center;
+    background:linear-gradient(135deg,#FFE2C9,#FFD08B);
+    font-size:2.1rem;
+  }
+  .pet-mini strong{
+    display:block;
+    color:var(--brown);
+  }
+  .pet-mini span{
+    color:var(--coral);
+    font-size:.9rem;
+  }
+  .steps-final{
+    margin:34px auto 0;
+    max-width:960px;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:18px;
+  }
+  .step-final{
+    background:rgba(255,253,248,.88);
+    border:1px solid var(--line);
+    border-radius:28px;
+    padding:24px;
+    box-shadow:0 18px 44px -34px rgba(58,31,18,.5);
+  }
+  .step-final .num{
+    width:48px;
+    height:48px;
+    display:grid;
+    place-items:center;
+    border-radius:50%;
+    background:linear-gradient(135deg,var(--coral),var(--orange));
+    color:white;
+    font-weight:900;
+    margin-bottom:14px;
+  }
+  .final-banner{
+    margin-top:36px;
+    padding:34px 24px;
+    text-align:center;
+    background:linear-gradient(135deg,#F0644F,#F59A23);
+    color:white;
+    font-family:'Fraunces',serif;
+    font-size:1.8rem;
+    font-weight:900;
+  }
+  .final-banner em{
+    color:#FFE9B9;
+    font-style:italic;
+  }
+  @media(max-width:860px){
+    .price-final-card, .steps-final{ grid-template-columns:1fr; }
+    .price-box, .included-box{ border-right:0; border-bottom:1px solid var(--line); }
+    .pets-proof-grid{ grid-template-columns:repeat(2,1fr); }
+  }
+
 </style>
 </head>
 <body>
 
 <nav>
   <div class="wrap">
-    <div class="brand">
-      <svg viewBox="0 0 24 24" fill="none"><path d="M12 21s-7.5-4.6-10-9.2C0.2 8.4 2 5 5.4 5c2 0 3.4 1.1 4.6 2.7C11.2 6.1 12.6 5 14.6 5 18 5 19.8 8.4 22 11.8 19.5 16.4 12 21 12 21z" fill="#BD7E70"/></svg>
-      Voz do Meu Pet
-    </div>
+    <div class="brand"><span class="hero-logo-fix"><img src="imagens/logo-som-do-meu-pet.jpg" class="brand-logo-img" alt="Som do Meu Pet"></span></div>
     <a href="https://wa.me/5544999809999?text=Ol%C3%A1%21%20Quero%20criar%20uma%20m%C3%BAsica%20personalizada%20para%20o%20meu%20pet.%0A%0ANome%20do%20pet%3A%0ACachorro%20ou%20gato%3A%0AConte%20um%20pouco%20da%20hist%C3%B3ria%20dele%3A" class="btn-whats" target="_blank" rel="noopener">
       <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.79.47 3.46 1.29 4.91L2 22l5.32-1.4a9.86 9.86 0 0 0 4.72 1.2h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2zm0 18.06a8.15 8.15 0 0 1-4.16-1.14l-.3-.18-3.1.81.83-3.02-.2-.31a8.13 8.13 0 0 1-1.25-4.32c0-4.5 3.66-8.15 8.18-8.15 2.18 0 4.23.85 5.77 2.39a8.1 8.1 0 0 1 2.39 5.77c0 4.51-3.66 8.15-8.16 8.15zm4.48-6.12c-.25-.12-1.45-.71-1.67-.8-.22-.08-.39-.12-.55.12-.16.25-.63.8-.77.96-.14.16-.28.18-.53.06-.25-.12-1.04-.38-1.99-1.22-.73-.65-1.23-1.46-1.37-1.71-.14-.25-.01-.38.11-.51.11-.11.25-.28.37-.42.12-.14.16-.25.25-.41.08-.16.04-.31-.02-.43-.06-.12-.55-1.32-.75-1.81-.2-.48-.4-.41-.55-.42h-.47c-.16 0-.43.06-.65.31-.22.25-.86.84-.86 2.04 0 1.2.88 2.37 1 2.53.12.16 1.73 2.64 4.2 3.7.59.25 1.05.4 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.45-.59 1.65-1.16.2-.57.2-1.06.14-1.16-.06-.1-.22-.16-.47-.28z"/></svg>
       <span class="lbl">WhatsApp</span>
@@ -741,8 +1089,9 @@
 
     <div class="pet-story">
       <div class="pet-photo-card">
-        <img src="imagens/bernardo.jpg" alt="Bernardo, cachorro mascote do Voz do Meu Pet">
+        <img src="imagens/bernardo.jpg" alt="Bernardo, cachorro mascote do Som do Meu Pet">
         <span class="real-badge">❤️ História Real</span>
+        <div class="photo-mini-line">Música criada para eternizar um melhor amigo</div>
         <div class="photo-caption">Bernardo, uma lembrança para ouvir para sempre.</div>
       </div>
 
@@ -759,18 +1108,40 @@
     <div class="audio-card-premium">
       <div class="music-icon">♫</div>
       <h3>Ouça um trecho da música do Bernardo</h3>
-      <p class="sub">Um exemplo real criado para o Voz do Meu Pet.</p>
-      <audio controls preload="metadata" style="width:100%; max-width:680px; margin-top:18px;">
+      <p class="sub">Um exemplo real criado para o Som do Meu Pet.</p>
+
+      <div class="play-prep">
+        Feche os olhos por 30 segundos...<br>
+        Imagine ouvir a história do seu melhor amigo transformada em música.
+      </div>
+
+      <audio controls preload="metadata" style="width:100%; max-width:780px; margin-top:18px;">
         <source src="áudio/bernardo.mp3" type="audio/mpeg">
         Seu navegador não suporta áudio.
       </audio>
+
       <p class="listen-note">“Toda grande amizade merece uma trilha sonora.”</p>
-      <p class="offer-note">Cada música é criada exclusivamente a partir da história de um pet especial.</p>
+      <p class="after-audio-message">Seu pet merece ser lembrado para sempre. Nós transformamos histórias em músicas que atravessam o tempo.</p>
 
       <div class="story-cta">
         <a href="https://wa.me/5544999809999?text=Ol%C3%A1%21%20Quero%20criar%20uma%20m%C3%BAsica%20personalizada%20para%20o%20meu%20pet.%0A%0ANome%20do%20pet%3A%0ACachorro%20ou%20gato%3A%0AConte%20um%20pouco%20da%20hist%C3%B3ria%20dele%3A" class="btn-whats big" target="_blank" rel="noopener">
-          Quero criar a música do meu pet
+          Quero eternizar a história do meu pet
         </a>
+      </div>
+
+      <div class="proof-strip">
+        <div class="proof-mini-card">
+          <strong>🎵 Música personalizada</strong>
+          <span>Cada letra nasce da história real do pet.</span>
+        </div>
+        <div class="proof-mini-card">
+          <strong>❤️ Feita com emoção</strong>
+          <span>Uma homenagem para guardar e compartilhar.</span>
+        </div>
+        <div class="proof-mini-card">
+          <strong>🐾 Lembrança eterna</strong>
+          <span>Mais que uma música: uma memória afetiva.</span>
+        </div>
       </div>
     </div>
   </div>
@@ -778,6 +1149,64 @@
 
 
 
+
+<section class="section" id="preco">
+  <div class="wrap">
+    <div class="price-final-card reveal">
+      <div class="price-box">
+        <div class="price-title">Música personalizada<br>para o seu pet ♡</div>
+        <div class="price-value"><small>R$</small> 69,90</div>
+        <span class="installment">ou 12x de R$ 7,15 sem juros</span>
+      </div>
+      <div class="included-box">
+        <h3>O que está incluso:</h3>
+        <ul>
+          <li>Letra exclusiva inspirada na história do seu pet</li>
+          <li>Produção musical personalizada</li>
+          <li>Arquivo digital em alta qualidade</li>
+          <li>Entrega rápida pelo WhatsApp</li>
+          <li>Revisões para deixar tudo perfeito</li>
+        </ul>
+      </div>
+      <div class="memory-box">
+        Uma lembrança<br>para ouvir hoje<br><em>e para sempre.</em>
+      </div>
+    </div>
+
+    <div class="pets-proof-section reveal">
+      <div class="pets-proof-title">♡ Outros pets que já viraram música ♡</div>
+      <div class="pets-proof-grid">
+        <div class="pet-mini"><div class="fake-photo">🐶</div><strong>Bruce</strong><span>virou música</span></div>
+        <div class="pet-mini"><div class="fake-photo">🐱</div><strong>Lisa e Naldo</strong><span>viraram música</span></div>
+        <div class="pet-mini"><div class="fake-photo">🐕</div><strong>Duda</strong><span>virou música</span></div>
+        <div class="pet-mini"><div class="fake-photo">❤️</div><strong>Seu pet</strong><span>pode ser o próximo</span></div>
+      </div>
+    </div>
+
+    <div class="steps-final reveal" id="como-funciona">
+      <div class="step-final">
+        <div class="num">1</div>
+        <h3>Você me conta a história</h3>
+        <p>Preencha um breve formulário ou envie a história do seu pet pelo WhatsApp.</p>
+      </div>
+      <div class="step-final">
+        <div class="num">2</div>
+        <h3>Eu crio a música com carinho</h3>
+        <p>Letra e melodia personalizadas para refletir tudo que seu pet significa para você.</p>
+      </div>
+      <div class="step-final">
+        <div class="num">3</div>
+        <h3>Você recebe para se emocionar</h3>
+        <p>Entrega digital em alta qualidade, pronta para guardar e compartilhar.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="final-banner">
+  Seu pet deixou marcas no seu coração.<br>
+  <em>Nós transformamos essas marcas em música.</em>
+</div>
 <section class="section reveal">
   <div class="wrap center">
     <span class="eyebrow">para quem é essa música</span>
@@ -933,7 +1362,7 @@
         <li><span class="check">✓</span> Atendimento direto e pessoal pelo WhatsApp</li>
       </ul>
       <div class="price-row">
-        <span class="price">R$ 49,90</span>
+        <span class="price">R$ 69,90</span>
         <span class="price-sub">pagamento único · sua música é para sempre</span>
       </div>
       <a href="https://wa.me/5544999809999?text=Ol%C3%A1%21%20Quero%20criar%20uma%20m%C3%BAsica%20personalizada%20para%20o%20meu%20pet.%0A%0ANome%20do%20pet%3A%0ACachorro%20ou%20gato%3A%0AConte%20um%20pouco%20da%20hist%C3%B3ria%20dele%3A" class="btn-whats big" target="_blank" rel="noopener">
@@ -1021,7 +1450,7 @@
       <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.79.47 3.46 1.29 4.91L2 22l5.32-1.4a9.86 9.86 0 0 0 4.72 1.2h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2zm0 18.06a8.15 8.15 0 0 1-4.16-1.14l-.3-.18-3.1.81.83-3.02-.2-.31a8.13 8.13 0 0 1-1.25-4.32c0-4.5 3.66-8.15 8.18-8.15 2.18 0 4.23.85 5.77 2.39a8.1 8.1 0 0 1 2.39 5.77c0 4.51-3.66 8.15-8.16 8.15zm4.48-6.12c-.25-.12-1.45-.71-1.67-.8-.22-.08-.39-.12-.55.12-.16.25-.63.8-.77.96-.14.16-.28.18-.53.06-.25-.12-1.04-.38-1.99-1.22-.73-.65-1.23-1.46-1.37-1.71-.14-.25-.01-.38.11-.51.11-.11.25-.28.37-.42.12-.14.16-.25.25-.41.08-.16.04-.31-.02-.43-.06-.12-.55-1.32-.75-1.81-.2-.48-.4-.41-.55-.42h-.47c-.16 0-.43.06-.65.31-.22.25-.86.84-.86 2.04 0 1.2.88 2.37 1 2.53.12.16 1.73 2.64 4.2 3.7.59.25 1.05.4 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.45-.59 1.65-1.16.2-.57.2-1.06.14-1.16-.06-.1-.22-.16-.47-.28z"/></svg>
       Quero a música do meu pet pelo WhatsApp
     </a>
-    <p class="signoff">Com carinho, Voz do Meu Pet 🐾💛</p>
+    <p class="signoff">Com carinho, Som do Meu Pet 🐾💛</p>
   </div>
 </section>
 
