@@ -436,6 +436,248 @@
     .pet-story-text{ padding:30px 24px; text-align:left; }
   }
 
+
+  /* ===== VERSÃO 10/10 - BLOCO BERNARDO PREMIUM ===== */
+  #exemplo-audio{
+    background:
+      radial-gradient(circle at 20% 12%, rgba(203,151,219,0.20), transparent 34%),
+      radial-gradient(circle at 82% 70%, rgba(210,166,108,0.18), transparent 32%),
+      linear-gradient(180deg, #FBF5EF 0%, #F7EDE4 100%);
+    position: relative;
+    overflow: hidden;
+  }
+  #exemplo-audio::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background-image:
+      radial-gradient(circle, rgba(74,59,64,0.055) 1px, transparent 1.5px);
+    background-size: 28px 28px;
+    opacity:.45;
+    pointer-events:none;
+  }
+  #exemplo-audio .wrap{
+    position:relative;
+    z-index:1;
+  }
+  .story-kicker{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    padding:9px 16px;
+    border-radius:999px;
+    background:rgba(255,255,255,.72);
+    border:1px solid rgba(74,59,64,.10);
+    color:#8b4e8f;
+    font-weight:800;
+    box-shadow:0 14px 35px -25px rgba(74,59,64,.45);
+    margin-bottom:18px;
+  }
+  .headline .accent-name{
+    color:#8b4e8f;
+    font-style:italic;
+    position:relative;
+    white-space:nowrap;
+  }
+  .headline .accent-name::after{
+    content:"";
+    position:absolute;
+    left:4px;
+    right:4px;
+    bottom:5px;
+    height:10px;
+    border-radius:999px;
+    background:rgba(203,151,219,.25);
+    z-index:-1;
+  }
+  .pet-story{
+    margin-top:46px;
+    display:grid;
+    grid-template-columns:minmax(300px, .9fr) minmax(320px, 1.1fr);
+    gap:30px;
+    align-items:stretch;
+  }
+  .pet-photo-card{
+    position:relative;
+    border-radius:34px;
+    overflow:hidden;
+    min-height:480px;
+    background:#fff;
+    border:1px solid rgba(74,59,64,.12);
+    box-shadow:0 30px 70px -34px rgba(74,59,64,.65);
+    transform: rotate(-1deg);
+  }
+  .pet-photo-card::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:linear-gradient(180deg, transparent 60%, rgba(74,59,64,.28));
+    pointer-events:none;
+  }
+  .pet-photo-card img{
+    width:100%;
+    height:100%;
+    min-height:480px;
+    object-fit:cover;
+    object-position:center;
+    display:block;
+  }
+  .real-badge{
+    position:absolute;
+    top:18px;
+    left:18px;
+    z-index:2;
+    background:rgba(255,253,250,.94);
+    color:#8b4e8f;
+    border:1px solid rgba(74,59,64,.12);
+    border-radius:999px;
+    padding:10px 16px;
+    font-weight:900;
+    font-size:.92rem;
+    box-shadow:0 18px 42px -26px rgba(74,59,64,.65);
+  }
+  .photo-caption{
+    position:absolute;
+    left:22px;
+    right:22px;
+    bottom:20px;
+    z-index:2;
+    color:white;
+    text-align:left;
+    font-weight:800;
+    font-family:'Fraunces',serif;
+    font-size:1.35rem;
+    text-shadow:0 2px 16px rgba(0,0,0,.42);
+  }
+  .pet-story-text{
+    background:rgba(255,253,250,.88);
+    border:1px solid rgba(74,59,64,.10);
+    border-radius:34px;
+    padding:42px 40px;
+    box-shadow:0 30px 70px -38px rgba(74,59,64,.55);
+    text-align:left;
+    position:relative;
+    overflow:hidden;
+  }
+  .pet-story-text::before{
+    content:"“";
+    position:absolute;
+    top:-34px;
+    right:24px;
+    font-family:'Fraunces',serif;
+    font-size:9rem;
+    color:rgba(139,78,143,.10);
+    line-height:1;
+  }
+  .pet-story-text h3{
+    font-size:clamp(1.7rem,3.1vw,2.45rem);
+    color:#7f4388;
+    margin-bottom:18px;
+    line-height:1.08;
+  }
+  .pet-story-text p{
+    color:#5b5154;
+    margin-bottom:16px;
+    font-size:1.04rem;
+    line-height:1.78;
+  }
+  .pet-story-text .highlight{
+    margin-top:20px;
+    color:#8b4e8f;
+    font-family:'Fraunces',serif;
+    font-size:1.18rem;
+    font-weight:900;
+    line-height:1.45;
+  }
+  .memory-line{
+    margin-top:24px;
+    padding:18px 20px;
+    border-radius:22px;
+    background:linear-gradient(135deg, rgba(203,151,219,.18), rgba(210,166,108,.12));
+    color:#4A3B40;
+    font-weight:800;
+    border:1px solid rgba(74,59,64,.08);
+  }
+  .audio-card-premium{
+    margin:34px auto 0;
+    max-width:960px;
+    background:rgba(255,253,250,.92);
+    border:1px solid rgba(74,59,64,.12);
+    border-radius:34px;
+    padding:36px 34px;
+    box-shadow:0 30px 70px -38px rgba(74,59,64,.55);
+    position:relative;
+    overflow:hidden;
+  }
+  .audio-card-premium::before{
+    content:"";
+    position:absolute;
+    left:0;
+    right:0;
+    top:0;
+    height:5px;
+    background:linear-gradient(90deg, #8b4e8f, #D2A66C, #4CAF50);
+  }
+  .audio-card-premium .music-icon{
+    width:58px;
+    height:58px;
+    margin:0 auto 12px;
+    border-radius:50%;
+    display:grid;
+    place-items:center;
+    background:linear-gradient(135deg, #8b4e8f, #b57abb);
+    color:white;
+    font-size:1.8rem;
+    box-shadow:0 18px 40px -24px rgba(74,59,64,.55);
+  }
+  .audio-card-premium h3{
+    font-size:clamp(1.35rem,2.6vw,2rem);
+    margin-bottom:6px;
+  }
+  .audio-card-premium audio{
+    width:100%;
+    max-width:720px;
+    margin-top:22px;
+    filter:drop-shadow(0 12px 20px rgba(74,59,64,.12));
+  }
+  .listen-note{
+    margin:18px auto 0;
+    max-width:620px;
+    color:#7f4388;
+    font-weight:800;
+    font-family:'Fraunces',serif;
+    font-size:1.08rem;
+  }
+  .story-cta{
+    margin-top:28px;
+  }
+  .btn-whats.big{
+    font-size:1.04rem;
+    padding:17px 28px;
+    border-radius:999px;
+    box-shadow:0 20px 45px -24px rgba(47,147,66,.8);
+  }
+  @media (max-width:880px){
+    .pet-story{
+      grid-template-columns:1fr;
+      gap:22px;
+    }
+    .pet-photo-card{
+      min-height:360px;
+      transform:none;
+    }
+    .pet-photo-card img{
+      min-height:360px;
+    }
+    .pet-story-text{
+      padding:30px 24px;
+    }
+    .audio-card-premium{
+      padding:30px 20px;
+      border-radius:28px;
+    }
+  }
+
 </style>
 </head>
 <body>
@@ -493,38 +735,41 @@
 
 <section class="section tint" id="exemplo-audio">
   <div class="wrap center reveal">
-    <span class="eyebrow">ouça um exemplo real</span>
-    <h2 class="headline">A história do Bernardo virou música</h2>
-    <p class="lead mx">Aperte o play e sinta como uma lembrança especial pode se transformar em uma canção única para o seu pet.</p>
+    <div class="story-kicker">🐾 História real transformada em música</div>
+    <h2 class="headline">O amor do <span class="accent-name">Bernardo</span> virou melodia</h2>
+    <p class="lead mx">Feche os olhos, aperte o play e sinta como uma lembrança especial pode se transformar em uma canção única para o seu pet.</p>
 
     <div class="pet-story">
       <div class="pet-photo-card">
         <img src="imagens/bernardo.jpg" alt="Bernardo, cachorro mascote do Voz do Meu Pet">
-        <span class="real-badge">🐾 História real</span>
+        <span class="real-badge">❤️ História Real</span>
+        <div class="photo-caption">Bernardo, uma lembrança para ouvir para sempre.</div>
       </div>
 
       <div class="pet-story-text">
-        <h3>A história que inspirou essa música</h3>
-        <p>Bernardo é daqueles amigos que não precisam dizer uma palavra para demonstrar amor.</p>
-        <p>Com seu olhar carinhoso, seu jeitinho companheiro e sua presença em todos os momentos, ele conquistou um lugar eterno no coração da família.</p>
-        <p>Essa música nasceu para transformar carinho, saudade, brincadeiras e lembranças em uma homenagem que pode ser ouvida para sempre.</p>
+        <h3>Uma história que jamais será esquecida</h3>
+        <p>Bernardo nunca precisou dizer uma palavra para demonstrar amor.</p>
+        <p>Bastava o olhar carinhoso, a presença companheira e aquele jeitinho único de transformar qualquer momento simples em uma lembrança especial.</p>
+        <p>Foi dessa conexão que nasceu a música dele: uma homenagem criada para eternizar carinho, saudade, brincadeiras e todo o amor que só quem tem um pet entende.</p>
         <p class="highlight">Porque cada pet tem uma história que merece virar canção.</p>
+        <div class="memory-line">✨ Agora imagine ouvir uma música contando a história do seu melhor amigo.</div>
       </div>
     </div>
 
     <div class="audio-card-premium">
-      <div class="music-icon">🎵</div>
-      <h3>Trecho da música do Bernardo</h3>
+      <div class="music-icon">♫</div>
+      <h3>Ouça um trecho da música do Bernardo</h3>
       <p class="sub">Um exemplo real criado para o Voz do Meu Pet.</p>
       <audio controls preload="metadata" style="width:100%; max-width:680px; margin-top:18px;">
         <source src="áudio/bernardo.mp3" type="audio/mpeg">
         Seu navegador não suporta áudio.
       </audio>
+      <p class="listen-note">“Toda grande amizade merece uma trilha sonora.”</p>
       <p class="offer-note">Cada música é criada exclusivamente a partir da história de um pet especial.</p>
 
       <div class="story-cta">
         <a href="https://wa.me/5544999809999?text=Ol%C3%A1%21%20Quero%20criar%20uma%20m%C3%BAsica%20personalizada%20para%20o%20meu%20pet.%0A%0ANome%20do%20pet%3A%0ACachorro%20ou%20gato%3A%0AConte%20um%20pouco%20da%20hist%C3%B3ria%20dele%3A" class="btn-whats big" target="_blank" rel="noopener">
-          Quero a música do meu pet
+          Quero criar a música do meu pet
         </a>
       </div>
     </div>
